@@ -6,11 +6,13 @@
             <hbl-input>
                 <input v-model="email" id="email" type="text" placeholder=" " autocomplete="username" required />
                 <label for="email" v-text="'Email Address'" />
+                <svg-icon icon="mail" />
             </hbl-input>
 
             <hbl-input>
                 <input v-model="password" id="password" type="password" placeholder=" " autocomplete="current-password" required />
                 <label for="password" v-text="'Password'" />
+                <svg-icon icon="lock" size="xs" class="no-fill" />
             </hbl-input>
 
             <template v-for="error in errors">
@@ -164,6 +166,13 @@ export default {
         font-size: 28px;
         line-height: 30px;
         margin-bottom: 25px;
+    }
+
+    .hbl-input-group {
+        .icon {
+            width: 18px;
+            height: 18px;
+        }
     }
 
     .pw-reset {

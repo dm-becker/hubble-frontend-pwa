@@ -25,6 +25,10 @@
     &.no-fill {
         > svg {
             fill: none;
+
+            path {
+                fill: none;
+            }
         }
     }
     &.is-xs {
